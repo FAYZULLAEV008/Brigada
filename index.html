@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIGADA - Restoran</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">BRIGADA</h1>
+                
+                <!-- Desktop Menu -->
+                <nav class="desktop-nav">
+                    <a href="#hero" class="nav-link">Bosh sahifa</a>
+                    <a href="#menu" class="nav-link">Menyu</a>
+                    <a href="#about" class="nav-link">Biz haqimizda</a>
+                    <a href="#contact" class="nav-link">Aloqa</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav class="mobile-nav" id="mobileNav">
+                <a href="#hero" class="nav-link">Bosh sahifa</a>
+                <a href="#menu" class="nav-link">Menyu</a>
+                <a href="#about" class="nav-link">Biz haqimizda</a>
+                <a href="#contact" class="nav-link">Aloqa</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">BRIGADA Restorani</h1>
+            <p class="hero-subtitle animate-fade-in-delay">O'zbekistonning eng ta'mli taomlarini his qiling</p>
+            <button class="cta-btn" onclick="scrollToSection('menu')">Menyuni ko'ring</button>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+                    <path d="M7 2v20"></path>
+                    <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"></path>
+                </svg>
+                <h2 class="section-title">Bizning Menyumiz</h2>
+                <p class="section-description">An'anaviy o'zbek oshxonasining eng yaxshi taomlarini taqdim etamiz</p>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Menu Item 1 -->
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://avatars.mds.yandex.net/i?id=92d5aa22d6f8d6f78081abc6d33703c440dbf829-6918470-images-thumbs&n=13" alt="Osh">
+                        <div class="menu-item-overlay"></div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Osh</h3>
+                        <p class="menu-item-description">An'anaviy o'zbek oshi, goshtli va sabzavotli</p>
+                        <div class="menu-item-footer">
+                            <span class="menu-item-price">35,000 so'm</span>
+                            <button class="order-btn">Buyurtma</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 2 -->
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://avatars.mds.yandex.net/i?id=f21abf6386cae0294fd40ebbcc2ec227a4448e34-16239175-images-thumbs&n=13" alt="Lag'mon">
+                        <div class="menu-item-overlay"></div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Lag'mon</h3>
+                        <p class="menu-item-description">Qo'l bilan tortilgan lag'mon, maxsus sous bilan</p>
+                        <div class="menu-item-footer">
+                            <span class="menu-item-price">30,000 so'm</span>
+                            <button class="order-btn">Buyurtma</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 3 -->
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://avatars.mds.yandex.net/i?id=d56206fbf1cca88ce0ad542c1a10da544b492487-5359329-images-thumbs&n=13" alt="Manti">
+                        <div class="menu-item-overlay"></div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Manti</h3>
+                        <p class="menu-item-description">Yumshoq, bug'da pishirilgan manti</p>
+                        <div class="menu-item-footer">
+                            <span class="menu-item-price">25,000 so'm</span>
+                            <button class="order-btn">Buyurtma</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 4 -->
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://avatars.mds.yandex.net/i?id=c3e9d644f6ff3cfc2e23b53912de369bcbf4d7a4-5232187-images-thumbs&n=13" alt="Shashlik">
+                        <div class="menu-item-overlay"></div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Shashlik</h3>
+                        <p class="menu-item-description">Qo'y go'shti yoki tovuq shashligidan tanlang</p>
+                        <div class="menu-item-footer">
+                            <span class="menu-item-price">40,000 so'm</span>
+                            <button class="order-btn">Buyurtma</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 5 -->
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://avatars.mds.yandex.net/i?id=b1ed664c7a2276e23eeabf6aec7f1ed5d6387a99-16312088-images-thumbs&n=13" alt="Somsa">
+                        <div class="menu-item-overlay"></div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Somsa</h3>
+                        <p class="menu-item-description">Tandir somsasi, yangi pishirilgan</p>
+                        <div class="menu-item-footer">
+                            <span class="menu-item-price">8,000 so'm</span>
+                            <button class="order-btn">Buyurtma</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 6 -->
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://avatars.mds.yandex.net/i?id=93a46431bc141a8c43f9c8d848e79562e23405ef-5528343-images-thumbs&n=13" alt="Norin">
+                        <div class="menu-item-overlay"></div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-name">Norin</h3>
+                        <p class="menu-item-description">Salqin norin, yoz kunlari uchun ajoyib</p>
+                        <div class="menu-item-footer">
+                            <span class="menu-item-price">28,000 so'm</span>
+                            <button class="order-btn">Buyurtma</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://public.youware.com/users-website-assets/prod/70f796ce-4895-4ca6-801d-6d4c63dceaf4/0d72588df31e4530a6a27839ab3ebdfc.jpg" alt="Restaurant Interior">
+                </div>
+                
+                <div class="about-content">
+                    <h2 class="about-title">Biz Haqimizda</h2>
+                    <p class="about-text">
+                        BRIGADA restorani 2010-yildan beri Toshkent shahrida o'zbek milliy taomlarini tayyorlash sohasida faoliyat 
+                        yuritib kelmoqda. Bizning maqsadimiz - an'anaviy retseptlarni saqlab qolgan holda, zamonaviy 
+                        xizmat ko'rsatish standartlarini taqdim etishdir.
+                    </p>
+                    <p class="about-text">
+                        Har bir taom sevgi va professional mahorat bilan tayyorlanadi. Biz faqat yuqori sifatli 
+                        mahsulotlardan foydalanamiz va har bir mehmonimizga unutilmas ta'm tajribasini taqdim etishga intilamiz.
+                    </p>
+
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"></path>
+                                <line x1="6" y1="17" x2="18" y2="17"></line>
+                            </svg>
+                            <h3 class="feature-title">Professional oshpazlar</h3>
+                            <p class="feature-description">15+ yillik tajriba</p>
+                        </div>
+                        <div class="feature-card">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <h3 class="feature-title">Tez xizmat</h3>
+                            <p class="feature-description">20 daqiqada tayyor</p>
+                        </div>
+                        <div class="feature-card">
+                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="6"></circle>
+                                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                            </svg>
+                            <h3 class="feature-title">Sifat kafolati</h3>
+                            <p class="feature-description">Halol sertifikati</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Biz bilan bog'laning</h2>
+                <p class="section-description">Sizni kutib qolamiz!</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <h3 class="contact-title">Manzil</h3>
+                    <p class="contact-text">Toshkent sh., Chilonzor tumani,<br>Bunyodkor ko'chasi, 25-uy</p>
+                </div>
+
+                <div class="contact-card">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <h3 class="contact-title">Telefon</h3>
+                    <p class="contact-text">
+                        +998 90 123 45 67<br>
+                        +998 91 987 65 43
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <h3 class="contact-title">Ish vaqti</h3>
+                    <p class="contact-text">
+                        Har kuni: 09:00 - 23:00<br>
+                        Dam olish kunlari: Dam olmaymiz
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-cta">
+                <button class="cta-btn">Stol band qilish</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3 class="footer-logo">BRIGADA</h3>
+            <p class="footer-text">O'zbekistonning eng yaxshi restorani</p>
+            <p class="footer-copyright">&copy; 2024 BRIGADA Restorani. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
